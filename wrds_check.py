@@ -11,7 +11,7 @@ incorr_wrds = []
 for _ in range(int(input())):
     txt_wrds = [txt_wrd.lower() for txt_wrd in input().split()]
     for txt_wrd in txt_wrds:
-        if txt_wrd not in wrds_dict:
+        if txt_wrd not in wrds_dict and txt_wrd not in incorr_wrds:
             incorr_wrds.append(txt_wrd)
 
 for word in incorr_wrds:
